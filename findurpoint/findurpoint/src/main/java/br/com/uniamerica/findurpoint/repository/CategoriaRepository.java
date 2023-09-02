@@ -1,8 +1,6 @@
 package br.com.uniamerica.findurpoint.repository;
 
 
-import br.com.uniamerica.findurpoint.entity.Categoria;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import org.springframework.data.repository.query.Param;

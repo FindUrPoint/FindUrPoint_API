@@ -1,6 +1,5 @@
 package br.com.uniamerica.findurpoint.controller;
 
-import br.com.uniamerica.findurpoint.entity.Categoria;
 import br.com.uniamerica.findurpoint.entity.Favoritado;
 import br.com.uniamerica.findurpoint.entity.Local;
 import br.com.uniamerica.findurpoint.entity.User;
@@ -12,7 +11,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 

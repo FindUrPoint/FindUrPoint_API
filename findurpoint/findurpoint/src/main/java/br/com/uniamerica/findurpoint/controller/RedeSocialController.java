@@ -1,8 +1,6 @@
 package br.com.uniamerica.findurpoint.controller;
 
 
-import br.com.uniamerica.findurpoint.entity.Categoria;
-import br.com.uniamerica.findurpoint.entity.Contato;
 import br.com.uniamerica.findurpoint.entity.RedeSocial;
 import br.com.uniamerica.findurpoint.repository.RedeSocialRepository;
 import org.springframework.beans.factory.annotation.Autowired;

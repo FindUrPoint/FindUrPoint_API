@@ -1,11 +1,7 @@
 package br.com.uniamerica.findurpoint.controller;
 
 
-import br.com.uniamerica.findurpoint.entity.Categoria;
-import br.com.uniamerica.findurpoint.entity.Comentario;
-import br.com.uniamerica.findurpoint.entity.Local;
 import br.com.uniamerica.findurpoint.repository.CategoriaRepository;
-import br.com.uniamerica.findurpoint.repository.ComentarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;

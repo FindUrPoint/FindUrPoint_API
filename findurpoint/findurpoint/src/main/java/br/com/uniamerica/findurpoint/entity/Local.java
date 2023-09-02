@@ -19,15 +19,24 @@ public class Local extends AbstractEntity{
     private String nome;
 
     @Getter @Setter
+    @Column(name = "foto")
+    private String foto;
+
+    @Getter @Setter
+    @Column(name = "telefone", nullable = false, unique = true)
+    private String telefone;
+
+    @Getter @Setter
+    @Column(name = "email", nullable = false, unique = true)
+    private String email;
+
+    @Getter @Setter
     @Column(name = "descricaoLocal", length = 200)
     private String descricaoLocal;
 
     @Getter @Setter
     @Column(name = "endereco" , length = 20, nullable = false)
     private String endereco;
-    @Getter @Setter
-    @Column(name = "numero" , length = 4, nullable = false)
-    private String numero;
 
     @Getter @Setter
     @OneToMany(cascade = CascadeType.ALL)
@@ -37,4 +46,10 @@ public class Local extends AbstractEntity{
     )
     private List<RedeSocial> redeSocial;
 
+    @Getter @Setter
+    @Column(name = "categoria", nullable = false)
+    private Categoria categoria;
+
+    @Getter @Setter
+    private List<Comentario> comentario;
 }
