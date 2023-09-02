@@ -16,24 +16,18 @@ import java.util.List;
 public class User extends AbstractEntity{
 
     @Getter @Setter
-    @Column(name = "nome", nullable = false, length = 30)
+    @Column(name = "nome", nullable = false, length = 40)
     private String nome;
 
     @Getter @Setter
-    @Column(name = "senha", nullable = false, length = 10)
+    @Column(name = "senha", nullable = false, length = 20)
     private String senha;
 
     @Getter @Setter
-    @Column(name = "confirmacaoSenha", nullable = false)
-    private String confirmacaoSenha;
-
-    @Getter @Setter
-    @Column(name = "email", nullable = false, unique = true)
+    @Column(name = "email", nullable = false, unique = true, length = 40)
     private String email;
 
-    @Getter @Setter
-    @Column(name = "cpf", nullable = false, length = 13)
-    private String cpf;
-
+    @Column(name = "favorito")
+    private List<Local> favorito;
 
 }
