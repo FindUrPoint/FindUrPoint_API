@@ -27,6 +27,7 @@ public class User extends AbstractEntity{
     @Column(name = "email", nullable = false, unique = true, length = 40)
     private String email;
 
+    @Getter @Setter
     @Column(name = "favorito")
     private List<Local> favorito;
 

@@ -15,32 +15,15 @@ import java.time.LocalDateTime;
 public class Comentario extends AbstractEntity{
 
     @Getter @Setter
-    @Column(name = "email", nullable = false, length = 30, unique = true)
-    private String email;
+    @Column(name = "nome")
+    private User usuario;
 
     @Getter @Setter
-    @Column(name = "descricao_comentario", nullable = false, length = 255)
-    private String descricaoComentario;
+    @Column(name = "comentarioTexto", length = 255)
+    private String comentarioTexto;
 
     @Getter @Setter
     @Column(name = "data")
     private LocalDateTime data;
-
-
-    @Getter @Setter
-    @JoinColumn(name = "id_locais")
-    @ManyToOne
-    private Local local;
-
-    @Getter @Setter
-    @JoinColumn(name = "id_user")
-    @ManyToOne
-    private User user;
-
-
-//    @Getter @Setter
-//    @ManyToMany
-//    @JoinColumn(name = "local_id")
-//    private Local local;
 
 }
