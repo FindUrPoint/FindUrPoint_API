@@ -14,7 +14,7 @@ import javax.persistence.*;
 public class RedeSocial extends AbstractEntity{
 
     @Getter @Setter
-    @Column(name = "nome", length = 30)
+    @Column(name = "nome", length = 20, nullable = false, unique = true)
     private String nome;
 
 }
