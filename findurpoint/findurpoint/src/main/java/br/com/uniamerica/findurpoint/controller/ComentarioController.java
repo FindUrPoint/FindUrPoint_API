@@ -23,12 +23,12 @@ public class ComentarioController {
         return ResponseEntity.ok().body(this.comentarioRepository.findByAtivo(true));
     }
 
-    @GetMapping("/{email}") //no puede haber 2 iguales por eso cree otro get con otro path
+    /*  @GetMapping("/{email}") //no puede haber 2 iguales por eso cree otro get con otro path
     public ResponseEntity <List<Comentario>> findAll( // responseentity esta devolviendo la comunicacion padronizado
             @PathVariable("email") final String email // pathvariable
     ) {
         return ResponseEntity.ok().body(this.comentarioRepository.findByEmail(email));
-    }
+    }*/
 
     @PostMapping //parse es una comparacion de llaves
     public ResponseEntity<?> cadastrar(@RequestBody final Comentario comentario){ //requestbody padron definido dentro del cuerpo de mi requisicion

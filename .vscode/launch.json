@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-FindurpointApplication<findurpoint>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.uniamerica.findurpoint.FindurpointApplication",
+            "projectName": "findurpoint",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

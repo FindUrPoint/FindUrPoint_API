@@ -20,13 +20,8 @@ public abstract class AbstractEntity {
     @Column(name = "ativo", nullable = false)
     private boolean ativo;
 
-    @Getter @Setter
-    @Column(name = "cadastro", nullable = false)
-    private LocalDateTime cadastro;
-
-    @Getter @Setter
-    @Column(name = "atualizado", nullable = false)
-    private LocalDateTime atualizado;
+    
 
 
 }
+

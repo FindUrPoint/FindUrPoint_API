@@ -51,5 +51,6 @@ public class Local extends AbstractEntity{
     private Categoria categoria;
 
     @Getter @Setter
+    @OneToMany
     private List<Comentario> comentario;
 }

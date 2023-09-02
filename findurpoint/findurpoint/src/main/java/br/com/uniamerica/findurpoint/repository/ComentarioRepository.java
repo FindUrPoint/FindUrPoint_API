@@ -12,7 +12,7 @@ import java.util.List;
 public interface ComentarioRepository extends JpaRepository<Comentario, Long> {
 
     public List<Comentario> findByAtivo(@Param("ativo") final boolean ativo);
-    public List<Comentario> findByEmail(@Param("email") final String email);
+    
 
 }
 

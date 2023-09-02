@@ -15,7 +15,8 @@ import java.time.LocalDateTime;
 public class Comentario extends AbstractEntity{
 
     @Getter @Setter
-    @Column(name = "nome")
+    @JoinColumn(name = "nomeUsuario")
+    @ManyToOne
     private User usuario;
 
     @Getter @Setter
