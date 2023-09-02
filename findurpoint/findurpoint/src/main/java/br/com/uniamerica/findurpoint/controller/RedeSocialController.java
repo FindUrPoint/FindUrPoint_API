@@ -53,19 +53,7 @@ public class RedeSocialController {
         return ResponseEntity.ok().body("Registro atualizado com exito...");
     }
 
-   // @PutMapping("/update/{idRedeSocial}")
-   // public  ResponseEntity<?> update(
-     //       @PathVariable Long idRedeSocial,
-       //     @RequestBody RedeSocial redeSocial
-   // ){
-     //   try{
-       //     this.redeSocialRepository.update(idRedeSocial ,redeSocial);
-         //   return ResponseEntity.ok().body("Rede Social Atualizada com Sucesso");
-        //}  catch (Exception e){
-          //  return ResponseEntity.badRequest().body(e.getMessage());
-       // }
 
-    //}
 
 }
 

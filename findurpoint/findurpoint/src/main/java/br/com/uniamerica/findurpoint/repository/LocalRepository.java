@@ -13,9 +13,6 @@ import java.util.List;
 public interface LocalRepository extends JpaRepository<Local, Long> {
 
 
-//    @Query(value = "select * from tb")
-//    public List<RedeSocial> findById(@Param("id") final Long id);
-//
     public List<Local> findByNome(@Param("nome") final String nome);
 
 }

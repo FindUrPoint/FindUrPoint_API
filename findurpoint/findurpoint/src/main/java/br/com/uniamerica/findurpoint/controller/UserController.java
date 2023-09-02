@@ -58,23 +58,5 @@ public class UserController {
         return ResponseEntity.ok().body("Registro atualizado com exito...");
     }
 
-//    @PostMapping("/favoritar/{idUser}/{idLocal}")
-//    public ResponseEntity<?> insertFavoritar(
-//            @PathVariable Long idUser,
-//            @PathVariable Long idLocal
-//    ) {
-//        User user = this.userRepository.findById(idUser).get();
-//        Local local = this.localRepository.findById(idLocal).get();
-//        user.getFavoritos().add(local);
-//        this.userRepository.save(user);
-//        return  ResponseEntity.ok().body("Local Favoritado com Sucesso");
-//    }
 
-//    @GetMapping("/favoritos/{id}")
-//    public ResponseEntity<?> locaisFavoritados(
-//            @PathVariable Long id
-//    ){
-//        User user = this.userRepository.findById(id).get();
-//        return ResponseEntity.ok().body(user.getFavoritos());
-//    }
 }

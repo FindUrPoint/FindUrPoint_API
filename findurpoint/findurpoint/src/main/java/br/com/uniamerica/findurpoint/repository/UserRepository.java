@@ -12,5 +12,4 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     public List<User> findByNome(@Param("nome") final String nome);
 
-    //void update(Long idUser, User user);
 }

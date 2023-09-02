@@ -1,10 +1,6 @@
 package br.com.uniamerica.findurpoint.controller;
 
-import br.com.uniamerica.findurpoint.entity.Contato;
-
 import br.com.uniamerica.findurpoint.entity.Local;
-import br.com.uniamerica.findurpoint.entity.User;
-import br.com.uniamerica.findurpoint.repository.ContatoRepository;
 import br.com.uniamerica.findurpoint.repository.LocalRepository;
 import br.com.uniamerica.findurpoint.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,9 +19,6 @@ public class LocalController {
 
     @Autowired
     public UserRepository userRepository;
-
-    @Autowired
-    private ContatoRepository contatoRepository;
 
     @GetMapping
     public ResponseEntity<List<Local>> findAll(){
@@ -72,30 +65,5 @@ public class LocalController {
         }
         return ResponseEntity.ok().body("Registro excluido com exito...");
     }
-
-    @PostMapping("/contatar/{idUser}/{idLocal}")
-    public ResponseEntity<?> insertContatar(
-            @PathVariable Long idUser,
-            @PathVariable Long idLocal
-    ) {
-        User user = this.userRepository.findById(idUser).get();
-        Local local = this.localRepository.findById(idLocal).get();
-
-        Contato contato = new Contato(user, local);
-        this.contatoRepository.save(contato);
-        return  ResponseEntity.ok().body("Contato efetuado com Sucesso");
-    }
-
-
-//    @PostMapping("/contatar/{idUser}")
-//    public ResponseEntity<?> insertContato(
-//            @PathVariable Long idUser
-//    ) {
-//        User user = this.userRepository.findById(idUser).get();
-//
-//        Contato contato = new Contato(user);
-//        this.contatoRepository.save(contato);
-//        return  ResponseEntity.ok().body("Contato registrado com Sucesso");
-//    }
 
 }

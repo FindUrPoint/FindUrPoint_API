@@ -11,6 +11,5 @@ import java.util.List;
 public interface RedeSocialRepository extends JpaRepository<RedeSocial, Long> {
 
     public List<RedeSocial> findByNome(@Param("nome") final String nome);
-
-   // Void update(Long idRedeSocial, RedeSocial redeSocial);
+    
 }
